@@ -1,0 +1,166 @@
+.skills{
+	position:relative;
+	align-items: center;
+	display: flex;
+	place-items:center;
+	justify-content: space-around;
+	width: 100%;
+	}
+
+	
+
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+	color: #cc9900;
+	margin-bottom: 1rem;
+	
+}
+.skills-bar{
+	width: 800px;
+	background-color :#FFC7A2;
+	border-color: #000000;
+	border-radius: 15px;
+	padding: 25px 30px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.skills-bar .bar{
+	margin: 20px 0px;
+}
+
+
+.skills-bar .bar:first-child{
+	margin-top: 0px;
+}
+
+.skills-bar .bar .info{
+	margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+	font-size: 17px;
+	font-weight: 500;
+	opacity: 0;
+	animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+
+.skills-bar .bar .progress-line{
+	position: relative;
+	height: 10px;
+	width:100%;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),0px 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+
+}
+.bar .progress-line span{
+	height: 100%;
+	width: 80%;
+	background: #ff944d;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+
+}
+
+.progress-line.html span{
+	width: 85%;
+}
+
+
+.progress-line.javascript span{
+	width: 65%;
+}
+
+.progress-line.java span{
+	width: 50%;
+}
+
+.progress-line.pseint span{
+	width: 80%;
+}
+
+.progress-line.habilidades span{
+	width: 80%;
+}
+
+
+.bar .progress-line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:#000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+
+
+.bar .progress-line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2{
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.progress-line.html span::after{
+	content: "85%";
+}
+
+
+.progress-line.javascript span::after{
+	content: "65%";
+}
+
+.progress-line.java span::after{
+	content: "50%";
+}
+
+.progress-line.pseint span::after{
+	content: "80%";
+}
+
+.progress-line.habilidades span::after{
+	content: "80%";
+}

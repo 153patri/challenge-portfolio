@@ -1,0 +1,45 @@
+.contac__form{
+	background-color: #e3c07b;
+	width: 90%;
+	margin: auto;
+	max-width: 400px;
+	border-radius: 2em;
+	padding: 3.5em 1.5em;
+	border: #3c3119;
+}
+
+.contac__form__container{
+	width: 100%;
+	display: grid;
+	gap: 1em;
+	grid-auto-columns: 100%;
+}
+
+.contac__form__input{
+	font-family: inherit;
+	font-size: 1rem;
+	padding: .8em 1em;
+	outline: none;
+	border: none;
+	border: 1px solid #c7990d;
+	border-radius: .2em;
+}
+
+.contac__form__input--message{
+	resize: none;
+	padding: 1.8em 1em;
+	margin-bottom: .5em;
+}
+
+.contac__form__cta{
+	font-family: inherit;
+	background-color: #c7990d;
+	color: #ffffff;
+	border: none;
+	font-weight: 300;
+	padding: .7em 0;
+	border-radius: .2em;
+	cursor: pointer;
+	font-weight: 400;
+}
+

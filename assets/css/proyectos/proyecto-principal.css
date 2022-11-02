@@ -1,0 +1,13 @@
+.proyectos__principal{
+	font-size: 2rem;
+	color: #e8e6e1;
+	text-align: center;
+	margin-top: 2rem;
+}
+.proyecto__volver{
+	font-size: 1rem;
+	color: #64635e;
+	padding: 1rem;
+	text-decoration: none;
+	padding-left: 2rem;
+}

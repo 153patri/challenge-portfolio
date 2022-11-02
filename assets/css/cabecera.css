@@ -1,0 +1,21 @@
+.cabecera{
+	align-items: center;
+	background: #7e7b7b;
+	display: flex;
+	height: 60px;
+	justify-content: space-between;
+	padding-left: 2rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	
+}
+@media (max-width: 768px){
+	.cabecera{
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
+		height: 5rem;
+		padding-left: 0;
+		padding-right: .5rem;
+	}
+}
