@@ -1,2 +1,2 @@
-#Primer challenge de Frontend realizado
+#Primer challenge de Frontend realizado.
 Gracias Alura Latam
